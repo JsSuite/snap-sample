@@ -1,0 +1,65 @@
+.promoMain {
+    padding: 96px;
+    margin-right: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.promoTitle {
+    color: var(--alm-black);
+    font-size: 80px;
+    font-family: EpiLogueBold;
+    line-height: initial;
+}
+
+.promoSubTitle p {
+    color: var(--med-gray);
+    padding: 32px 0px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.promoButton {
+    display: flex;
+}
+
+.promoFooter {
+    display: flex;
+    padding-top: 88px;
+}
+
+.promoFooter span {
+    padding: 16px;
+}
+
+@media (max-width: 426px) {
+    .promoMain {
+        padding: 16px;
+        padding-top: 32px;
+        margin: 0px;
+    }
+
+    .promoTitle {
+        width: 90vw;
+        font-size: 32px;
+        text-align: center;
+        font-family: EpiLogueXBold;
+    }
+
+    .promoSubTitle p {
+        width: 95vw;
+        text-align: center;
+        line-height: 1.2em;
+        padding: 16px 0px;
+    }
+
+    .promoButton {
+        width: 90vw;
+        justify-content: center;
+    }
+
+    .promoFooter span {
+        padding: 8px;
+    }
+}

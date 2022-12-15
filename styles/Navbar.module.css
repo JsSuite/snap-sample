@@ -1,0 +1,130 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.navMenu {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 32px;
+    font-weight: 700;
+    color: var(--med-gray);
+    cursor: pointer;
+}
+
+
+.navMenu:hover {
+    color: var(--alm-black);
+}
+
+.navMenu svg {
+    margin-left: 6px;
+}
+
+.navMenuPopupCard {
+    background: var(--al-white);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 8px 16px;
+}
+
+.navMenuAccordion {
+    background: var(--al-white);
+    padding: 8px;
+    height: 0px;
+    overflow: hidden;
+}
+
+.navMenuAccordionExpanded {
+    height: 100%;
+}
+
+.navMenuPopupCard ul li,
+.navMenuAccordion ul li {
+    padding: 4px;
+    color: var(--med-gray);
+    cursor: pointer;
+}
+
+.navMenuPopupCard ul li:hover,
+.navMenuAccordion ul li:hover {
+    color: var(--alm-black);
+}
+
+.navMenuPopupCard ul li span,
+.navMenuAccordion ul li span {
+    padding: 16px;
+}
+
+.navMenuPopupCard ul li span svg,
+.navMenuAccordion ul li span svg {
+    width: 16px;
+}
+
+.navLogo {
+    padding-right: 32px;
+    padding-top: 32px;
+}
+
+.navLogoMobile {
+    padding: 16px;
+    padding-top: 32px;
+}
+
+.navSection {
+    width: 100%;
+    display: flex;
+    max-height: 75vh;
+    overflow: auto;
+}
+
+.profileSection {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.menuWrapper {
+    padding-left: 100px;
+    padding-top: 32px;
+    position: absolute;
+    right: 16px;
+}
+
+.modal {
+    height: 100vh;
+    background-color: var(--alm-white);
+    padding: 16px;
+}
+
+.closeModal {
+    display: flex;
+    justify-content: end;
+    padding: 16px;
+}
+
+@media (max-width: 426px) {
+    .navMenu {
+        padding-top: 16px;
+    }
+
+    .navSection {
+        flex-direction: column;
+    }
+
+    .navMenuAccordion ul li {
+        padding-left: 16px;
+    }
+
+    .profileSection {
+        width: 90%;
+        flex-direction: column;
+        padding-top: 20px;
+        position: absolute;
+        bottom: 16px;
+    }
+
+    .profileSection div {
+        margin-bottom: 8px;
+    }
+}

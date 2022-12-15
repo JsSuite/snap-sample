@@ -1,0 +1,18 @@
+.promoImageWrapper {
+    width: "fit-content";
+    height: 80vh;
+    padding: 16px;
+}
+
+.promoImage {
+    width: inherit;
+    height: inherit;
+}
+
+@media (max-width: 426px) {
+    .promoImageWrapper {
+        width: initial;
+        height: initial;
+        padding: 0px;
+    }
+}

@@ -1,0 +1,38 @@
+.button {
+    min-width: 128px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--med-gray);
+    border-color: var(--alm-black);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    color: var(--alm-black);
+}
+
+.bordered {
+    border: 3px solid;
+}
+
+.filled {
+    min-width: 150px;
+    padding: 8px;
+    color: var(--alm-white);
+    background-color: var(--alm-black);
+    border: 3px solid;
+}
+
+.filled:hover {
+    color: var(--alm-black);
+    background-color: var(--alm-white);
+    border: 3px solid;
+}
+
+.large {
+    min-width: 150px;
+}

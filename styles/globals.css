@@ -1,9 +1,39 @@
+@font-face {
+  font-family: EpiLogue;
+  src: url(../font/Epilogue-VariableFont_wght.ttf);
+  font-weight: 500, 700
+}
+
+@font-face {
+  font-family: EpiLogueXBold;
+  src: url(../font/static/Epilogue-ExtraBold.ttf);
+  font-weight: 500, 700
+}
+
+@font-face {
+  font-family: EpiLogueBold;
+  src: url(../font/static/Epilogue-Bold.ttf);
+  font-weight: 500, 700
+}
+
+@font-face {
+  font-family: EpiLogueLight;
+  src: url(../font/static/Epilogue-Light.ttf);
+  font-weight: 500, 700
+}
+
+:root {
+  --alm-white: hsl(0, 0%, 98%);
+  --med-gray: hsl(0, 0%, 41%);
+  --alm-black: hsl(0, 0%, 8%);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: EpiLogue;
+  line-height: 2em;
 }
 
 a {
@@ -15,12 +45,43 @@ a {
   box-sizing: border-box;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
   }
+}
+
+.popup-content {
+  background: rgb(255, 255, 255);
+  width: 60%;
+  position: absolute !important;
+  top: 0px;
+  right: 0px;
+}
+
+.popup-arrow {
+  color: rgb(255, 255, 255);
+}
+
+[role='tooltip'].popup-content {
+  width: 200px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+[data-popup='tooltip'].popup-overlay {
+  background: transparent;
 }
