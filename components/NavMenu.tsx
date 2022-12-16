@@ -44,7 +44,7 @@ export default function NavMenu(props: NavMenu) {
         <div className={styles.navMenuAccordion + " " + expandedStyle}>
           <ul>
             {children?.map((child) => (
-              <li>
+              <li key={child.name}>
                 {child.Icon ? <span>{<child.Icon />}</span> : <></>}
                 {child.name}
               </li>
@@ -60,7 +60,7 @@ export default function NavMenu(props: NavMenu) {
       <div className={styles.navMenuPopupCard}>
         <ul>
           {children?.map((child) => (
-            <li>
+            <li key={child.name}>
               {child.Icon ? <span>{<child.Icon />}</span> : <></>}
               {child.name}
             </li>

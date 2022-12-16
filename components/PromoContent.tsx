@@ -47,7 +47,7 @@ export default function PromoContent() {
       <div className={styles.promoFooter}>
         {isMobile
           ? CLIENT_LIST_MOBILE.map((iconUrl) => (
-              <span>
+              <span key={iconUrl}>
                 <img
                   src={iconUrl}
                   style={{ height: "fit-content", width: 70 }}
@@ -55,8 +55,8 @@ export default function PromoContent() {
                 />
               </span>
             ))
-          : CLIENT_LIST.map((ClientIcon) => (
-              <span>
+          : CLIENT_LIST.map((ClientIcon, index) => (
+              <span key={index}>
                 <ClientIcon />
               </span>
             ))}

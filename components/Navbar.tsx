@@ -7,6 +7,7 @@ import NavMenu from "./NavMenu";
 import Button from "./Button";
 import useScreen from "../hooks/useMobile";
 import Popup from "reactjs-popup";
+import Image from "next/image";
 
 function Logo() {
   return (
@@ -22,7 +23,7 @@ export default function Navbar() {
   const NavSection = (
     <div className={styles.navSection}>
       {NAV_MENU_LIST.map((navMenu) => (
-        <NavMenu {...navMenu} />
+        <NavMenu key={navMenu.name} {...navMenu} />
       ))}
     </div>
   );
@@ -48,7 +49,7 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       {isMobile ? (
         <div className={styles.navLogoMobile}>
-          <img
+          <Image
             src={"/images/logo.svg"}
             style={{ height: "fit-content", width: 100 }}
             alt="website logo"
@@ -62,7 +63,7 @@ export default function Navbar() {
         <Popup
           trigger={
             <div className={styles.menuWrapper}>
-              <img
+              <Image
                 src={"/images/icon-menu.svg"}
                 style={{ height: "fit-content", width: 50 }}
                 alt="website menu"
